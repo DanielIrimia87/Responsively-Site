@@ -1,0 +1,114 @@
+body{
+    background-color: #f2f2f2;
+    font-family: Ubuntu,sans-serif;
+    color: #707070;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* ===========
+  Typography
+============== */
+   
+.header-title{
+    font-family: Lora,sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #143774;
+    margin: 0;
+}
+
+.header-subtitle{
+    font-family: Ubuntu,sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    color: #1792D2;
+    margin: 0.25rem;
+}
+
+/* ===========
+     Layout
+============== */
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header{
+    padding: 2em 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Navigations */
+    
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792D2;
+}
+
+.current-page-link{
+    border-bottom: 2px solid #170707;
+}
+
+.current-page-link:hover {
+    color: #707070;
+}
+
+/* This is a media query. It is a way to apply styles to a page based on the size of the screen. In
+this case, the styles will only be applied if the screen is 675px or smaller. */
+@media (max-width: 675px){
+
+    .container-nav{
+        flex-direction: column;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav li{
+        margin: .5em 0;
+    }
+
+    nav a{
+        font-size: 2rem;
+    }
+}
+    
+
