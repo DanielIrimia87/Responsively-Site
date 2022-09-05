@@ -1,12 +1,8 @@
 body{
-    background-color: #f2f2f2;
+    background: #f2f2f2;
     font-family: Ubuntu,sans-serif;
     color: #707070;
     margin: 0;
-}
-
-*{
-    box-sizing: border-box;
 }
 
 /* ===========
@@ -22,11 +18,10 @@ body{
 }
 
 .header-subtitle{
-    font-family: Ubuntu,sans-serif;
     font-size: .75rem;
     font-weight: 700;
     color: #1792D2;
-    margin: 0.25rem;
+    margin: 0;
 }
 
 /* ===========
@@ -35,8 +30,9 @@ body{
 
 .container {
     width: 90%;
-    max-width: 960px;
+    max-width: 900px;
     margin: 0 auto;
+    border: 2px solid magenta;
 }
 
 .container-nav{
@@ -48,7 +44,6 @@ body{
 
 header{
     padding: 2em 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* Navigations */
