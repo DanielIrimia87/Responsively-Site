@@ -17,6 +17,13 @@ img {
     display: block;
 }
 
+.image-full{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
 /* =================
 Typography
 ================= */
@@ -35,6 +42,8 @@ h3 {
     margin: 0;
 }
 
+
+h3,
 a {
     color: #1792d2;
 }
@@ -86,6 +95,14 @@ aside p {
     margin: 2em 0;
 }
 
+.widget-title,
+.widget-recent-post-title {
+    font-size: 1rem;
+}
+
+.widget-title {
+    font-weight: 700;
+}
 
 /* =================
 Layout
@@ -107,7 +124,13 @@ header {
     background: #f8f8f8;
     padding: 2em 0;
     text-align: center;
-    margin-bottom: 3em;
+}
+
+footer{
+    background: #143774;
+    color: #fff;
+    padding: 3em 0;
+    text-align: center;
 }
 
 @media (min-width: 675px) {
@@ -233,4 +256,20 @@ nav a:focus {
     border: 20px solid #efefef;
     margin-bottom: 2em;
     padding: 1em;
+}
+
+.widget-recent-posts{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child {
+    border: 0;
+    margin: 0;
+}
+
+.widget-image{
+    order: -1;
 }
